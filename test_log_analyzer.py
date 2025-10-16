@@ -34,7 +34,7 @@ def test_get_first_action(module):
 
 def main():
     files = os.listdir(".")
-    files = [f for f in files if os.path.isfile(f) and "log-analyzer" in f and 'test' not in f]
+    files = [f for f in files if os.path.isfile(f) and "log_analyzer" in f and 'test' not in f]
 
     test_list = [test_count_total_actions,test_count_player_actions,test_find_total_value,test_is_player_present,test_get_first_action]
 	
