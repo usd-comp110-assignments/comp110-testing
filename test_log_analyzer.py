@@ -2,19 +2,19 @@ import os, importlib
 
 def test_count_total_actions(module):
     # check empty file
-    if module.count_total_actions("empty_file.txt") == 0:
+    if module.count_total_actions("test_data/empty_file.txt") == 0:
         print("Passed: empty file case " + str(module).split()[1])
     else:
         print("Failed: empty file case " + str(module).split()[1])
     
     # check file with one line
-    if module.count_total_actions("one_line.txt") == 1:
+    if module.count_total_actions("test_data/one_line.txt") == 1:
         print("Passed: one line file case " + str(module).split()[1])
     else:
         print("Failed: one line file case " + str(module).split()[1])
     
     # check file with multiple lines
-    if module.count_total_actions("multi_line.txt") == 4:
+    if module.count_total_actions("test_data/multi_line.txt") == 4:
         print("Passed: multi line file case " + str(module).split()[1])
     else:
         print("Failed: multi line file case " + str(module).split()[1])
